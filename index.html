@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #2d4059;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: #ea5455;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: slide-in 1s ease-in-out;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 15px;
+        }
+
+        th {
+            background-color: #ff9a8b;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffcb74; /* Improved even row background color */
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(31, 155, 56);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Task No</th>
+            <th>Task Name</th>
+            <th>Repo Link</th>
+            <th>Deployment Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Paragraph Counter</td>
+            <td><a href="https://github.com/nkmrt3/paragraph-counter">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/paragraph-counter/">Deploy</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Calculator</td>
+            <td><a href="https://github.com/nkmrt3/calculator-react">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/calculator-react/">Deploy</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Color Picker</td>
+            <td><a href="https://github.com/nkmrt3/color-pick">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/color-pick/">Deploy</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Dummy Data</td>
+            <td><a href="https://github.com/nkmrt3/dummy-data-mern">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/dummy-data-mern/">Deploy</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Age Calculator</td>
+            <td><a href="https://github.com/nkmrt3/age-calc">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/age-calc/">Deploy</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Portfolio</td>
+            <td><a href="https://github.com/nkmrt3/protfolio">Repo</a></td>
+            <td><a href="https://nkmrt3.github.io/protfolio/">Deploy</a></td>
+        </tr>
+    </table>
+</body>
+</html>
